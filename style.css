@@ -112,6 +112,14 @@ header {
     letter-spacing: 0.3em;
 }
 
+.written_date {
+    color: #979797;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    margin-top: -25px;
+}
+
 .countdown {
     margin: 0 calc(50% - 364px); /* (150Width + 2Borders + 30Margin) * 4 / 2 = 364px*/
     height: 180px;
@@ -251,12 +259,21 @@ header {
     padding: 0 15%;
 }
 
-.buying_options > div > h3 {
+.buying_options > div > h3, .buying_options > div > p > span {
     color: #FA795A;
 }
 
+
 .buying_options > div > p {
     padding-left: 25px;
+}
+
+.buying_options > div > p > span {
+    font-size: 22px;
+}
+
+.buying_options > div > p:last-child {
+    padding-left: 0;
 }
 
 .buying_options > h2 {
@@ -546,12 +563,6 @@ footer > p > a {
     width: 50%;
     height: 30px;
 }
-
-/* .poster > span {
-    width: 30px !important;
-    height: auto;
-    margin
-} */
 
 .poster > input {
     width: 30px !important;
