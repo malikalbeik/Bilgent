@@ -1,0 +1,324 @@
+@media only screen and (max-width: 1300px) {
+    /* For computer and tablets: */
+
+    header {
+        height: 100px;
+    }
+
+    .logo {
+        width: 150px;
+        margin: 10px 30px;
+    }
+
+    .navbar {
+        font-size: 24px;
+        padding: 35px 25px;
+    }
+
+    .background_opacity > img , .background_opacity_registration > img {
+        height: auto;
+        min-height: 600px;
+    }
+
+    .background_opacity, .background_opacity_registration {
+        height: 600px;
+    }
+
+    .background_opacity_registration  {
+        height: 500px;
+    }
+
+    .countdown_container {
+        top: 100px;
+    }
+
+    .countdown_container > h2 {
+        font-size: 24px;
+    }
+
+    .countdown_container > h1 {
+        font-size: 46px;
+    }
+
+    .countdown {
+        margin: 0 calc(50% - 264px); /* (100Width + 2Borders + 30Margin) * 4 / 2 = 364px*/
+        height: 140px;
+    }
+
+    .countdown > li {
+        width: 100px;
+        height: 100px;
+    }
+
+    .countdown > li > .time {
+        font-size: 24px;
+    }
+
+    .countdown > li > .time_label {
+        font-size: 16px;
+    }
+
+    .register_button  {
+        width: 200;
+        height: 50px;
+        margin: 25px calc(50% - 100px);
+    }
+
+    .register_button > a {
+        font-size: 18px;
+    }
+
+    .about_event_description > h2, .about_us_description > h2, .contactus_socialmedia h2, .schedule > h2 {
+        font-size: 36px;
+    }
+
+    .about_event_description > p , .about_us_description > p {
+        font-size: 16px;
+    }
+
+    .about_event_register_button, .about_readmore_button {
+        width: 150px;
+        height: 40px;
+        margin-top: 25px;
+    }
+
+    .about_event_register_button > a, .about_readmore_button > a {
+        font-size: 16px;
+    }
+
+    .speaker_img {
+        width: 150px;
+    }
+
+    .speaker_img > img {
+        width: 125px;
+    }
+
+    .speaker_name {
+        font-size: 18px;
+    }
+
+    .speaker_position {
+        font-size: 12px;
+    }
+
+    .speaker_description {
+        height: 210px;
+        width: calc(100% - 150px);
+    }
+
+    .speaker_description > p {
+        font-size: 14px;
+    }
+
+    .speaker_description > p span {
+        font-size: 18px;
+    }
+
+    .social_media div {
+        width: 50px;
+        height: 50px; 
+    }
+
+    .social_media a {
+        font-size: 24px;
+    }
+
+    .location h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .location p {
+        font-size: 16px;
+    }
+
+    #map {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* For Mobile Phones: */
+
+    header {
+        height: 75px;
+    }
+
+    .logo {
+        width: 100px;
+        margin: 10px 10px;
+        margin-right: 0;
+    }
+
+    .navbar {
+        font-size: 14px;
+        padding: 30px 10px;
+    }
+
+    .background_opacity > img , .background_opacity_registration > img {
+        height: auto;
+        min-height: 400px;
+    }
+
+    .background_opacity, .background_opacity_registration {
+        height: 400px;
+    }
+
+    .background_opacity_registration  {
+        height: 350px;
+    }
+
+    .countdown_container {
+        top: 75px;
+    }
+
+    .countdown_container > h2 {
+        font-size: 16px;
+    }
+
+    .countdown_container > h1 {
+        font-size: 26px;
+        letter-spacing: 0.1em;
+    }
+
+    .countdown {
+        margin: 0 calc(50% - 144px); /* (60Width + 2Borders + 10Margin) * 4 / 2 = 364px*/
+        height: 72px;
+        padding: 10px 0;
+    }
+
+    .countdown > li {
+        margin: 5px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .countdown > li > .time {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .countdown > li > .time_label {
+        font-size: 8px;
+    }
+
+    .register_button  {
+        width: 125;
+        height: 30px;
+        margin: 25px calc(50% - 62.5px);
+    }
+
+    .register_button > a {
+        font-size: 12px;
+    }
+
+    .about_event > .container, .about-us > .container{
+        flex-direction: column;
+    }
+
+    .about_event_description, .about_us_description {
+        width: 92%;
+    }
+
+    .aboutevent_img, .aboutus_img {
+        display: none;
+    }
+
+    .about_event_description > h2, .about_us_description > h2, .contactus_socialmedia h2, .schedule > h2, .location h2 {
+        font-size: 18px;
+    }
+
+    .about_event_description > p , .about_us_description > p {
+        font-size: 10px;
+        margin-top: 15px;
+    }
+
+    .about_event_register_button, .about_readmore_button {
+        width: 100px;
+        height: 25px;
+        margin-top: 15px;
+    }
+
+    .about_event_register_button > a, .about_readmore_button > a {
+        font-size: 10px;
+    }
+
+    .speaker > .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .speaker_img {
+        width: 150px;
+        margin: 0;
+    }
+
+    .speaker_img > img {
+        width: 150px;
+        border-radius: 10px;
+    }
+
+    .speaker_name {
+        font-size: 18px;
+    }
+
+    .speaker_position {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    .speaker_description {
+        height: auto;
+        width: auto;
+    }
+
+    .speaker_description > p {
+        font-size: 12px;
+    }
+
+    .speaker_description > p span {
+        font-size: 14px;
+    }
+    
+    .location p {
+        font-size: 12px;
+    }
+
+    .registration_container > h2 {
+        font-size: 22px;
+    }
+
+    .registration_container > form {
+        padding: 0 5%;
+    }
+
+    .registration_container > form  button {
+        width: 100px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    footer > p {
+        font-size: 14px;
+        margin-top: 3px;
+    }
+
+    .social_nav > li {
+        margin: 5px;
+    }
+    .social_nav > li > a {
+        font-size: 16px;
+    }
+
+    /* registered page */
+    .aboutus_long > h2 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "genetic-club",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "malik albeik",
+  "license": "ISC",
+  "dependencies": {
+    "wow.js": "^1.2.2"
+  }
+}

@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IX. HORIZONS | Kayıt Ol</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="animate.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="background">
+                <div class="background_opacity_registration">
+                    <img src="resources/background.png" alt="background">
+                    <header>
+                        <a href="index.html">
+                            <img src="resources/logo.png" alt="logo" class="logo" />
+                        </a>
+                        <a href="speakers.html" class="navbar">Konuşmacılar</a>
+                        <a href="schedule.html" class="navbar">Program</a>
+                    </header>
+                    <div class="countdown_container">
+                        <h2>Bilgent - MBG Konferansı</h2>
+                        <h1>IX. HORIZONS - 2019</h1>
+                        <ul class="countdown">
+                            <li class="countdown_days">
+                                <p class="time">00</p>
+                                <p class="time_label">Gün</p>
+                            </li>
+                            <li class="countdown_hours">
+                                <p class="time">00</p>
+                                <p class="time_label">Saat</p>
+                            </li>
+                            <li class="countdown_mins">
+                                <p class="time">00</p>
+                                <p class="time_label">Dakika</p>
+                            </li>
+                            <li class="countdown_secs">
+                                <p class="time">00</p>
+                                <p class="time_label">Saniye</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="registration_container">
+                <h2 class="wow bounceInDown">Kayıt Formu</h2>
+                <form id ="registrationForm" action="registered.html">
+                    <label for="Name" class="wow fadeInLeft">
+                        <span>Adı: </span>
+                        <input type="text" name="name" required>
+                    </label>
+                    <label for="Surname" class="wow fadeInLeft">
+                        <span>Soyadı: </span>
+                        <input type="text" name="surname" required>
+                    </label>
+                    <label for="University" class="wow fadeInLeft">
+                        <span>Üniversite: </span>
+                        <input type="text" name="university">
+                    </label>
+                    <label for="email" class="wow fadeInLeft">
+                        <span>E-mail: </span>
+                        <input type="text" name="email" required>
+                    </label>
+                    <label for="poster" class="wow fadeInLeft poster">
+                        <span>Poster Sunumu Yapacaksanız Tıklayın: </span>
+                        <input name="poster" type="checkbox">
+                    </label>
+                    <p class="wow fadeInLeft">Katilim ücretleri: 50tl tek kisi | 80tl poster sunumuyla katilacaklar | 10 kisi ve uzeri 40tl</p>
+                    <p class="wow fadeInLeft">Ödeme Bilgiler: <br><br>
+                    Ali goktug attar <br>
+                    TR 5500 0100 1762 4997 0744 5002 <br>
+                    [isim soyisim ] [ horizons ]</p>
+                    <p class="wow fadeInLeft">
+                        Not: Poster sunumu yapacak olanlar, lütfen bilkentgeneticssociety@gmail.com dan gelcek olan talimatları bekleyin.
+                    </p>
+                    <p class="mailError wow fadeInRight">The mail that you entered is already registered, please use another mail.</p>
+                    <button type="submit" class="wow fadeInLeft" action="submitForm()">Kayıt Ol</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <ul class="social_nav">
+                <li><a href="https://www.facebook.com/bilkentgenetics/"><i class="fab fa-facebook-f"></a></i></li>
+                <li><a href="https://twitter.com/bilkentgenetics"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/bilkentgenetics/"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <p>Created By: <a href="https://www.malikalbeik.me">Malik Albeik</a></p>
+        </footer>
+        <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+        <script src="fireBase.js" type="text/javascript"></script>
+        <script src="node_modules/wow.js/dist/wow.min.js"></script>
+        <script src="app.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,565 @@
+/*
+https://www.pixelsurplus.com/freebies/manrope-free-modern-geometric-sans-serif-font-family
+Manrope font is created by micheal gent and is an 
+open-source font free for personal & commercial use.
+*/
+
+@font-face {
+  font-family: manrope;
+  src: url(fonts/manrope/regular.otf);
+}
+
+@font-face {
+  font-family: manrope;
+  src: url(fonts/manrope/light.otf);
+  font-weight: lighter;
+}
+@font-face {
+  font-family: manrope;
+  src: url(fonts/manrope/bold.otf);
+  font-weight: bold;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main, .main_speakers {
+    min-height: 100%;
+    padding-bottom: 50px;
+}
+
+* {
+    font-family: manrope;
+    font-weight: normal;
+}
+
+header {
+    border-bottom: solid 1px #cecece;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo {
+    width: 260px;
+    margin: 5px 30px;
+}
+
+.navbar {
+    text-decoration: none;
+    color: #B5B5B5;
+    font-size: 36px;
+    padding: 50.5px 25px;
+    float: right;
+}
+
+.navbar:hover {
+    color: #FA795A;
+}
+
+.background {
+    position: relative;
+    z-index: 10;
+}
+
+.background_opacity > img , .background_opacity_registration > img {
+    position: relative;
+    min-height: 900px;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+}
+
+.background_opacity, .background_opacity_registration {
+    position: relative;
+    height: 900px;
+    top: 0px;
+    left: 0px;
+    background: rgba(33, 33, 33, 0.7);
+    overflow: hidden;
+}
+
+.background_opacity_registration {
+    height: 700px;
+}
+
+.countdown_container {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 150px);
+    text-align: center;
+    padding-top: 25px;
+}
+
+.countdown_container > h2 {
+    font-size: 36px;
+    color: #B5B5B5;
+}
+
+.countdown_container > h1 {
+    font-size: 62px;
+    color: white;
+    letter-spacing: 0.3em;
+}
+
+.countdown {
+    margin: 0 calc(50% - 364px); /* (150Width + 2Borders + 30Margin) * 4 / 2 = 364px*/
+    height: 180px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.countdown > li {
+    float: left;
+    margin: 15px;
+    border: solid #979797 1px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.countdown > li > .time {
+    font-size: 46px;
+    color: #FA795A;
+    margin-top: 12.5px;
+    margin-bottom: 10px;
+}
+
+.countdown > li > .time_label {
+    font-size: 24px;
+    color: #9F9F9F;
+    margin-top: 0;
+}
+
+.register_button  {
+    width: 300px;
+    height: 75px;
+    background: white;
+    margin: 100px calc(50% - 150px);
+    border-radius: 2.5px;
+    display: table;
+}
+
+.register_button > a {
+    color: #FA795A;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 26px;
+}
+
+.about_event > .container, .about-us > .container{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.about_event_description, .about_us_description {
+    width: 50%;
+    padding: 4%;
+}
+
+.about_event_description > h2, .about_us_description > h2 {
+    margin-top: 0;
+    font-size: 42px;
+}
+
+.about_event_description > p , .about_us_description > p {
+    margin-top: 50px;
+    font-size: 22px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.aboutevent_img, .aboutus_img {
+    width: 50%;
+    padding: 4%;
+}
+
+.aboutevent_img > img, .aboutus_img > img{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about_event_register_button, .about_readmore_button {
+    width: 200px;
+    height: 50px;
+    background: #FA795A;
+    margin-top: 50px;
+    text-align: center;
+    display: table;
+    border-radius: 2.5px;
+}
+
+.about_event_register_button > a, .about_readmore_button > a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.schedule {
+    width: 100%;
+    background-color: #1F2833;
+    color: white;
+    padding-top: 75px;
+}
+
+
+/* To delete */
+.schedule > p {
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 75px;
+    margin-bottom: 0;
+    letter-spacing: 0.4em;
+}
+
+.schedule > h2 {
+    text-align: center;
+    font-size: 42px;
+    margin: 0;
+}
+
+.schedule > hr {
+    width: 275px;
+    border: 0.5px solid #979797;
+}
+
+.speaker {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.speaker > .container {
+    display: flex;
+    padding: 50px 5%;
+}
+
+.speaker_img {
+    width: 200px;
+    padding: 0;
+    text-align: center;
+    margin-right: 60px;
+}
+
+.speaker_img > img {
+    border-radius: 100%;
+    width: 150px;
+}
+
+.speaker_name {
+    color: #FA795A;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.speaker_position {
+    margin-top: 0;
+    font-size: 16px;
+    color: #a7a7a7;
+    font-weight: lighter;
+}
+
+.speaker_description {
+    display: table;
+    height: 270px;
+    width: calc(100% - 160px);
+}
+
+.speaker_description > p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+}
+.speaker_description > p span {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.contactus_socialmedia {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.contactus_socialmedia h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 0;
+}
+
+.contactus_socialmedia hr {
+    width: 225px;
+    border: 0.5px solid #979797;
+}
+
+.social_media {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.social_media div {
+    margin: 10px;
+    width: 75px;
+    height: 75px;  
+    display: table; 
+    background: #FA795A;  
+    border-radius: 100%;
+}
+
+.social_media a {
+    text-align:center; 
+    vertical-align: middle;
+    text-decoration: none;
+    display: table-cell; 
+    color: white;
+    font-size: 36px;
+}
+
+.contactus_socialmedia a {
+    color: white;
+}
+
+.location {
+    width: 80%;
+    margin: 0 10%;
+    border-radius: 25px 25px 0 0 ;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.location h2 {
+    padding-top: 15px;
+    margin: 0;
+    font-size: 36px;
+}
+
+.location p {
+    font-size: 22px;
+    color: #5f5f5f;
+} 
+
+#map {
+    width: 100%;
+    height: 600px;
+}
+
+/* ==================== Footer ==================== */
+
+footer {
+    background-color: #1F2833;
+    color: rgb(211, 211, 211);;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    margin-top: -50px;
+    border-top: solid 1px white;
+}
+footer > p {
+    margin: 0;
+    font-size: 10px;
+    margin-right: 15px; 
+    margin-top: 5px;
+}
+footer > p > a {
+    color: #FA795A;
+    text-decoration: none;
+}
+.social_nav {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 15px;
+}
+.social_nav > li {
+    display:inline;
+    margin: 15px;
+}
+.social_nav > li > a {
+    color: rgb(211, 211, 211);
+    font-size: 22px;
+}
+
+
+
+
+/* ==================== Speakers Page ==================== */
+
+.main_speakers > header{
+    background: #1F2833;
+}
+
+.speakers_container {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.speakers_container > h2 {
+    color: black;
+    text-align: center;
+    padding-top: 75;
+    margin-bottom: 10px;
+    font-size: 42px;
+}
+
+.speakers_container > hr {
+    width: 250px;
+    border: solid 0.5px #979797;
+}
+
+.speakers_container > ul {
+    padding: 25px 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-bottom: 0;
+    border-bottom: solid 1px #cecece;
+    justify-content: space-evenly;
+}
+
+.speakers_container > ul > li {
+    padding: 50px 25px;
+    width: 250px;
+    margin: 25px;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.speakers_container .name_surname{
+    color: #FA795A;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.speakers_container .description {
+    margin: 0;
+    text-align: center;
+}
+
+.speakers_container > ul img {
+    width: 100%;
+}
+
+.speaker_socialmedia {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.speaker_socialmedia div {
+    margin: 10px;
+    width: 50px;
+    height: 50px;  
+    display: table; 
+    background: #FA795A;  
+    border-radius: 100%;
+}
+
+.speaker_socialmedia a {
+    text-align:center; 
+    vertical-align: middle;
+    text-decoration: none;
+    display: table-cell; 
+    color: white;
+    font-size: 26px;
+}
+
+/* ==================== Registration Page ==================== */
+
+.registration_container {
+    width: 100%;
+}
+
+.registration_container > h2 {
+    color: #FA795A;
+    font-size: 36px;
+    text-align: center;
+}
+
+.registration_container > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20%;
+    flex-wrap: wrap;
+}
+
+.registration_container > form label {
+    margin: 15px 0;
+}
+
+.registration_container > form  input {
+    float: right;
+    width: 50%;
+    height: 30px;
+}
+.registration_container > form button {
+    width: 125px;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgb(49, 63, 80);
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+}
+
+.mailError {
+    color: rgb(165, 0, 0);
+    display: none;
+}
+
+
+/* ==================== Aboutus Page ==================== */
+
+.aboutus_long {
+    margin: 200px 10%;
+    margin-bottom: 100px;
+    width: calc(80% - 100px);
+    padding: 50px 50px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.aboutus_long > h2 {
+    text-align: center;
+    font-size: 42px;
+    margin: 0;
+    color: #FA795A;
+}
+
+.aboutus_long > hr {
+    width: 40%;
+    border: 0.5px solid #979797;
+}
+
+.aboutus_long > p {
+    text-align: justify;
+}
+
+.poster > input {
+    width: 10%;
+}
