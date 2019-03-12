@@ -240,6 +240,36 @@ header {
     border: 0.5px solid #979797;
 }
 
+.buying_options {
+    width: 100%;
+    background-color: #1F2833;
+    color: white;
+    padding: 75px 0;
+}
+
+.buying_options > div {
+    padding: 0 15%;
+}
+
+.buying_options > div > h3 {
+    color: #FA795A;
+}
+
+.buying_options > div > p {
+    padding-left: 25px;
+}
+
+.buying_options > h2 {
+    text-align: center;
+    font-size: 42px;
+    margin: 0;
+}
+
+.buying_options > hr {
+    width: 275px;
+    border: 0.5px solid #979797;
+}
+
 .speaker {
     width: 90%;
     margin: 0 5%;
@@ -454,7 +484,7 @@ footer > p > a {
 .speakers_container .description {
     margin: 0;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     margin: 0;
     color: #979797;
 }
@@ -511,11 +541,22 @@ footer > p > a {
     margin: 15px 0;
 }
 
-.registration_container > form  input {
+.registration_container > form input {
     float: right;
     width: 50%;
     height: 30px;
 }
+
+/* .poster > span {
+    width: 30px !important;
+    height: auto;
+    margin
+} */
+
+.poster > input {
+    width: 30px !important;
+}
+
 .registration_container > form button {
     width: 125px;
     height: 40px;
@@ -561,8 +602,4 @@ footer > p > a {
 
 .aboutus_long > p {
     text-align: justify;
-}
-
-.poster > input {
-    width: 10%;
 }
