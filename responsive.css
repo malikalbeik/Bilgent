@@ -226,7 +226,15 @@
     }
 
     .about_event_description > h2, .about_us_description > h2, .contactus_socialmedia h2, .schedule > h2, .location h2 {
-        font-size: 18px;
+        font-size: 22px;
+    }
+
+    .schedule > hr {
+        width: 40%;
+    }
+
+    .schedule > p {
+        font-size: 20px;
     }
 
     .about_event_description > p , .about_us_description > p {
