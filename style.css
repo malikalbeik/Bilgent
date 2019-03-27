@@ -614,3 +614,7 @@ footer > p > a {
 .aboutus_long > p {
     text-align: justify;
 }
+
+.main > nav {
+    display: none;
+}
