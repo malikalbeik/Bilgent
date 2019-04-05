@@ -284,12 +284,9 @@
     }
 
     .speaker_description > p {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
-    .speaker_description > p span {
-        font-size: 14px;
-    }
     
     .location p {
         font-size: 12px;
