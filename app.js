@@ -31,16 +31,6 @@ var x = setInterval(function() {
 }, 1000);
 
 
-// initializing the map from google maps
-function initMap() {
-    // The location of Bilkent University
-    var location = { lat: 39.868345, lng: 32.765286 };
-    // The map, centered at Uluru
-    var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 12, center: location });
-    // The marker, positioned at location
-    var marker = new google.maps.Marker({ position: location, map: map });
-}
 
 
 wow = new WOW(
